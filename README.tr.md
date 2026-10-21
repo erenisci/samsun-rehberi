@@ -39,6 +39,8 @@ Event kodları `js/main.js` içinde.
 
 - Saf HTML, CSS ve JavaScript. Framework ve build adımı yok.
 - Mobil menülü, duyarlı (responsive) tasarım. Klavye odak durumları ve "içeriğe geç" bağlantısı var.
+- Anasayfada fotoğraf slaytı, kaydırınca beliren animasyonlar ve sayfa geçiş efektleri. Ziyaretçi hareketi azaltmayı seçtiyse hepsi kapanır.
+- Logo ve favicon bu site için SVG olarak çizildi.
 - Vercel üzerinde yayında. `vercel.json` ile uzantısız temiz URL'ler kullanılıyor (`/atakum.html` yerine `/atakum`).
 
 ```
@@ -62,7 +64,7 @@ HTML dosyalarını doğrudan tarayıcıda açmak da çalışır.
 
 ## Görseller
 
-Fotoğrafların tamamı [Wikimedia Commons](https://commons.wikimedia.org)'ta serbest lisansla paylaşılmış görsellerdir. Her fotoğraf, fotoğrafçının adını ve lisans koşullarını gösteren kaynak sayfasına bağlanır. Tam liste `about.html` sayfasında. Bazı yemek fotoğrafları yemeğin genel halini gösterir, Samsun usulü sunum farklı olabilir.
+Fotoğrafların tamamı [Wikimedia Commons](https://commons.wikimedia.org) ve [Pexels](https://www.pexels.com/license/) üzerinde serbest lisansla paylaşılmış görsellerdir. Her fotoğraf, fotoğrafçının adını ve lisans koşullarını gösteren kaynak sayfasına bağlanır. Tam liste `about.html` sayfasında. Bazı yemek fotoğrafları yemeğin genel halini gösterir, Samsun usulü sunum farklı olabilir.
 
 ## Gizlilik
 

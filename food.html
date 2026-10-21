@@ -5,10 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Samsun'da Ne Yenir? İlçe İlçe Yöresel Lezzetler | Samsun Rehberi</title>
   <meta name="description" content="Bafra pidesi, Terme pidesi, kaz tiridi, Çakallı menemeni, hamsi, Bafra nokulu ve kaymaklı lokum. Samsun'un ilçe ilçe yöresel lezzetleri.">
+  <meta name="theme-color" content="#0e2a3a">
   <meta property="og:title" content="Samsun'da Ne Yenir? İlçe İlçe Yöresel Lezzetler | Samsun Rehberi">
   <meta property="og:description" content="Bafra pidesi, Terme pidesi, kaz tiridi, Çakallı menemeni, hamsi, Bafra nokulu ve kaymaklı lokum. Samsun'un ilçe ilçe yöresel lezzetleri.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="tr_TR">
+  <script>document.documentElement.classList.add('js');</script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HYFFZ7NZW5"></script>
@@ -22,85 +24,94 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-content-group="food">
   <a class="skip-link" href="#main">İçeriğe geç</a>
 
   <header class="site-header">
-    <div class="container">
-      <a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0e2a3a"/><circle cx="16" cy="14" r="6" fill="#c0622f"/><path d="M4 21c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2v7H4z" fill="#2a7a8c"/><path d="M4 25c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2v3H4z" fill="#dcecef"/></svg>Samsun Rehberi</a>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Samsun Rehberi anasayfa"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14435a"/><stop offset="1" stop-color="#0a1f2c"/></linearGradient><linearGradient id="lg-sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc07a"/><stop offset="1" stop-color="#e76f51"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#lg-sea)"/><circle cx="40" cy="27" r="12" fill="url(#lg-sun)"/><path d="M20 22v18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M21 22.5l7 2.5-7 2.5z" fill="#e76f51"/><rect x="31" y="27" width="5.5" height="8" rx="1" fill="#fff"/><rect x="31" y="29" width="5.5" height="1.8" fill="#e76f51"/><rect x="24" y="34" width="20" height="6" rx="1.2" fill="#fff"/><path d="M11 40h42l-5.5 7.5h-31z" fill="#fff"/><path d="M6 52c4 0 4-2.6 8-2.6s4 2.6 8 2.6 4-2.6 8-2.6 4 2.6 8 2.6 4-2.6 8-2.6 4 2.6 8 2.6" fill="none" stroke="#8fd3dc" stroke-width="2.6" stroke-linecap="round"/><path d="M12 58c4 0 4-2.2 8-2.2s4 2.2 8 2.2 4-2.2 8-2.2 4 2.2 8 2.2 4-2.2 8-2.2" fill="none" stroke="#8fd3dc" stroke-width="2" stroke-linecap="round" opacity=".55"/></svg>
+        <span class="brand-text"><strong>Samsun Rehberi</strong><small>Karadeniz'in incisi</small></span>
+      </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç">
         <span></span><span></span><span></span>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="Ana menü">
-        <a href="index.html">Anasayfa</a><a href="places.html">Gezilecek Yerler</a><a href="atakum.html">Atakum</a><a href="districts.html">İlçeler</a><a href="food.html" aria-current="page">Ne Yenir?</a><a href="itinerary.html">2 Günlük Rota</a><a href="practical.html">Pratik Bilgiler</a><a href="about.html">Hakkında</a>
+        <a href="index.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span>Anasayfa</span></a><a href="places.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Gezilecek Yerler</span></a><a href="atakum.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"/><path d="M2 17c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"/><circle cx="17" cy="6" r="2"/></svg><span>Atakum</span></a><a href="districts.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><span>İlçeler</span></a><a href="food.html" aria-current="page"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11h18"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 4v3"/><path d="M8 5l1 2"/><path d="M16 5l-1 2"/></svg><span>Ne Yenir?</span></a><a href="itinerary.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="18" r="2"/><circle cx="18" cy="6" r="2"/><path d="M8 18h6a4 4 0 0 0 0-8h-4a4 4 0 0 1 0-8h6"/></svg><span>2 Günlük Rota</span></a><a href="practical.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg><span>Pratik Bilgiler</span></a><a href="about.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg><span>Hakkında</span></a>
       </nav>
     </div>
   </header>
 
   <main id="main">
 
-    <div class="page-head">
+    <div class="page-head has-bg">
+      <img class="page-head-bg" src="https://images.pexels.com/photos/36445048/pexels-photo-36445048.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="" decoding="async" fetchpriority="high">
       <div class="container">
         <span class="eyebrow">Yöresel lezzetler</span>
         <h1>Samsun'da ne yenir?</h1>
         <p class="lead">Samsun mutfağında hamur işleri başı çekiyor. Her ilçenin kendi pidesi var ve kimse diğerininkinin daha iyi olduğunu kabul etmiyor. Kaz eti, mısır ve Karadeniz balığı da sofranın vazgeçilmezleri.</p>
       </div>
+      <a class="hero-credit" href="https://www.pexels.com/photo/36445048/" target="_blank" rel="noopener">Foto: Pexels</a>
     </div>
     <section>
       <div class="container">
-        <div class="split">
-          <div>
-            <span class="eyebrow">Pideler ve hamur işleri</span>
-            <h2>Her ilçenin bir pidesi var</h2>
-            <p>Pide burada öğle yemeği olduğu kadar kahvaltı da sayılıyor. İlçe adıyla anılan pidelerin her biri farklı bir şekil ve dokuda. Ustalar hamuru incecik açıyor, odun ateşinde dakikalar içinde pişiriyor.</p>
+        <div class="section-head" data-reveal><span class="eyebrow">Pideler ve hamur işleri</span><h2>Her ilçenin bir pidesi var</h2><p class="section-intro">Pide burada öğle yemeği olduğu kadar kahvaltı da sayılıyor. İlçe adıyla anılan pidelerin her biri farklı bir şekil ve dokuda.</p></div>
+        <div class="grid grid-3">
+          <div class="card food-card" data-reveal style="--d:0">
+            <figure class="photo " data-label="Kıymalı pideler"><img src="https://images.pexels.com/photos/36445045/pexels-photo-36445045.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kıymalı pideler" loading="lazy" decoding="async"><figcaption><a href="https://www.pexels.com/photo/36445045/" target="_blank" rel="noopener">Foto: Pexels</a></figcaption></figure>
+            <div class="card-body">
+              <div class="meta"><span class="tag">Pide</span><span class="tag tag-clay">Coğrafi işaretli</span></div>
+              <h3>Bafra pidesi</h3>
+              <p>İncecik açılan hamur kıymalı ve bol soğanlı harcın üzerine kapatılıyor, uzun ve kapalı bir şekil alıyor. Odun ateşinde pişince dışı çıtır, içi yumuşak kalıyor.</p>
+              <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Bafra+pidesi+Bafra" target="_blank" rel="noopener" data-track="open_map" data-place="Bafra pidesi" data-section="food"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Bafra'da pideci ara</span></a>
+            </div>
           </div>
-          <figure class="photo " data-label="Samsun pidesi yapan pide ustası"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Samsun_pidesi_yapan_pide_ustas%C4%B1.JPG?width=1200" alt="Samsun pidesi yapan pide ustası" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Samsun_pidesi_yapan_pide_ustas%C4%B1.JPG" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>
-        </div>
-        <div class="grid grid-3" style="margin-top:40px">
-          <div class="card food-card">
-            <figure class="photo " data-label="Bafra pidesi"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bafra_pidesi.jpg?width=800" alt="Bafra pidesi" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Bafra_pidesi.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>
-            <div class="meta"><span class="tag">Pide</span> <span class="tag tag-clay">Coğrafi işaretli</span></div>
-            <h3>Bafra pidesi</h3>
-            <p>İncecik açılan hamur kıymalı ve bol soğanlı harcın üzerine kapatılıyor, uzun ve kapalı bir şekil alıyor. Odun ateşinde pişince dışı çıtır, içi yumuşak kalıyor.</p>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Bafra+pidesi+Bafra" target="_blank" rel="noopener" data-track="open_map" data-place="Bafra pidesi" data-section="food"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Bafra'da pideci ara</a>
+          <div class="card food-card" data-reveal style="--d:1">
+            <figure class="photo " data-label="Kıymalı açık pide"><img src="https://images.pexels.com/photos/5639365/pexels-photo-5639365.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Kıymalı açık pide" loading="lazy" decoding="async"><figcaption><a href="https://www.pexels.com/photo/5639365/" target="_blank" rel="noopener">Foto: Pexels</a></figcaption></figure>
+            <div class="card-body">
+              <div class="meta"><span class="tag">Pide</span></div>
+              <h3>Terme pidesi</h3>
+              <p>Bafra'nınkinin aksine açık pişiriliyor. Hamuru ince, üzeri bol malzemeli. Kıymalı, kuşbaşılı ve kaşarlı çeşitleri var, dokusu daha yumuşak.</p>
+              <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Terme+pidesi+Terme" target="_blank" rel="noopener" data-track="open_map" data-place="Terme pidesi" data-section="food"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Terme'de pideci ara</span></a>
+            </div>
           </div>
-          <div class="card food-card">
-            <figure class="photo " data-label="Kıymalı açık pide"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Turkish_pide_with_ground_beef.jpg?width=800" alt="Kıymalı açık pide" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Turkish_pide_with_ground_beef.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>
-            <div class="meta"><span class="tag">Pide</span></div>
-            <h3>Terme pidesi</h3>
-            <p>Bafra'nınkinin aksine açık pişiriliyor. Hamuru ince, üzeri bol malzemeli. Kıymalı, kuşbaşılı ve kaşarlı çeşitleri var, dokusu daha yumuşak.</p>
-            <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Terme+pidesi+Terme" target="_blank" rel="noopener" data-track="open_map" data-place="Terme pidesi" data-section="food"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Terme'de pideci ara</a>
+          <div class="card food-card" data-reveal style="--d:2">
+            <figure class="photo " data-label="Peynirli ve etli pide"><img src="https://images.pexels.com/photos/7813736/pexels-photo-7813736.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Peynirli ve etli pide" loading="lazy" decoding="async"><figcaption><a href="https://www.pexels.com/photo/7813736/" target="_blank" rel="noopener">Foto: Pexels</a></figcaption></figure>
+            <div class="card-body">
+              <div class="meta"><span class="tag">Pide</span></div>
+              <h3>Çarşamba pidesi</h3>
+              <p>Hamurunun sarımsı rengiyle diğerlerinden ayrılıyor. Çarşamba'ya kaz tiridi için gidiyorsan pidesini de denemeden dönme.</p>
+              
+            </div>
           </div>
-          <div class="card food-card">
-            <figure class="photo " data-label="Kuşbaşılı pide"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pide_(ku%C5%9Fba%C5%9F%C4%B1_etli).jpg?width=800" alt="Kuşbaşılı pide" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Pide_(ku%C5%9Fba%C5%9F%C4%B1_etli).jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>
-            <div class="meta"><span class="tag">Pide</span></div>
-            <h3>Çarşamba pidesi</h3>
-            <p>Hamurunun sarımsı rengiyle diğerlerinden ayrılıyor. Çarşamba'ya kaz tiridi için gidiyorsan pidesini de denemeden dönme.</p>
-            
+          <div class="card food-card" data-reveal style="--d:0">
+            <figure class="photo " data-label="Deniz kenarında simit"><img src="https://images.pexels.com/photos/14854785/pexels-photo-14854785.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Deniz kenarında simit" loading="lazy" decoding="async"><figcaption><a href="https://www.pexels.com/photo/14854785/" target="_blank" rel="noopener">Foto: Pexels</a></figcaption></figure>
+            <div class="card-body">
+              <div class="meta"><span class="tag">Fırın</span></div>
+              <h3>Samsun simidi</h3>
+              <p>Bol susamlı ve çıtır. Sabah sahilde çayla birlikte yenince Samsun'da olduğunu hissettiren küçük lezzetlerden.</p>
+              
+            </div>
           </div>
-          <div class="card food-card">
-            <figure class="photo " data-label="Simit"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Turkish_simit.jpg?width=800" alt="Simit" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Turkish_simit.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>
-            <div class="meta"><span class="tag">Fırın</span></div>
-            <h3>Samsun simidi</h3>
-            <p>Bol susamlı ve çıtır. Sabah sahilde çayla birlikte yenince Samsun'da olduğunu hissettiren küçük lezzetlerden.</p>
-            
+          <div class="card food-card" data-reveal style="--d:1">
+            <figure class="photo " data-label="Yoğurtlu mantı"><img src="https://images.pexels.com/photos/9665030/pexels-photo-9665030.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Yoğurtlu mantı" loading="lazy" decoding="async"><figcaption><a href="https://www.pexels.com/photo/9665030/" target="_blank" rel="noopener">Foto: Pexels</a></figcaption></figure>
+            <div class="card-body">
+              <div class="meta"><span class="tag">Hamur işi</span></div>
+              <h3>Samsun mantısı</h3>
+              <p>Kayseri mantısından daha iri hamurlu. Sosunda ceviz kullanılması onu diğer mantılardan ayırıyor.</p>
+              
+            </div>
           </div>
-          <div class="card food-card">
-            <figure class="photo " data-label="Mantı"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Mant%C4%B1.jpg?width=800" alt="Mantı" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Mant%C4%B1.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>
-            <div class="meta"><span class="tag">Hamur işi</span></div>
-            <h3>Samsun mantısı</h3>
-            <p>Kayseri mantısından daha iri hamurlu. Sosunda ceviz kullanılması onu diğer mantılardan ayırıyor.</p>
-            
-          </div>
-          <div class="card food-card">
+          <div class="card food-card" data-reveal style="--d:2">
             <figure class="photo " data-label="Haydari ve ezme, atoma benzeyen yoğurtlu mezeler"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ezme_and_Haydari.jpg?width=800" alt="Haydari ve ezme, atoma benzeyen yoğurtlu mezeler" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Ezme_and_Haydari.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>
-            <div class="meta"><span class="tag">Meze</span></div>
-            <h3>Atom</h3>
-            <p>Yoğurdun üzerine kızgın tereyağında yakılmış kuru biber dökülerek hazırlanan acı bir meze. Acıya dayanıklı değilsen yanına ekmek almayı unutma.</p>
-            
+            <div class="card-body">
+              <div class="meta"><span class="tag">Meze</span></div>
+              <h3>Atom</h3>
+              <p>Yoğurdun üzerine kızgın tereyağında yakılmış kuru biber dökülerek hazırlanan acı bir meze. Acıya dayanıklı değilsen yanına ekmek almayı unutma.</p>
+              
+            </div>
           </div>
         </div>
       </div>
@@ -108,37 +119,43 @@
 
     <section class="band">
       <div class="container">
-        <span class="eyebrow">Sofranın ana yıldızları</span>
-        <h2>Ana yemekler</h2>
-        <p class="section-intro">Samsun mutfağında kümes hayvanları, özellikle kaz, önemli bir yer tutuyor. Kış aylarında ve bayramlarda sofralar daha da zenginleşiyor.</p>
+        <div class="section-head" data-reveal><span class="eyebrow">Sofranın yıldızları</span><h2>Ana yemekler</h2><p class="section-intro">Samsun mutfağında kümes hayvanları, özellikle kaz, önemli bir yer tutuyor. Kış aylarında ve bayramlarda sofralar daha da zenginleşiyor.</p></div>
         <div class="grid grid-4">
-          <div class="card food-card">
+          <div class="card food-card" data-reveal style="--d:0">
             <figure class="photo " data-label="Samsun usulü kaz tiridi"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kaz_tiridi_in_Turkey,_una_especialidad_de_Samsun..jpg?width=800" alt="Samsun usulü kaz tiridi" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Kaz_tiridi_in_Turkey,_una_especialidad_de_Samsun..jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>
-            <div class="meta"><span class="tag">Kış yemeği</span></div>
-            <h3>Kaz tiridi</h3>
-            <p>Kaz eti kendi suyunda uzun uzun pişiriliyor, yufka bu suyla ıslatılıyor ve üzerine bulgur pilavı ile didiklenmiş et konuyor. Özellikle Çarşamba ile özdeşleşmiş bir kış ve bayram yemeği.</p>
-            
+            <div class="card-body">
+              <div class="meta"><span class="tag">Kış yemeği</span></div>
+              <h3>Kaz tiridi</h3>
+              <p>Kaz eti kendi suyunda uzun uzun pişiriliyor, yufka bu suyla ıslatılıyor ve üzerine bulgur pilavı ile didiklenmiş et konuyor. Çarşamba ile özdeşleşmiş bir kış ve bayram yemeği.</p>
+              
+            </div>
           </div>
-          <div class="card food-card">
+          <div class="card food-card" data-reveal style="--d:1">
             <figure class="photo " data-label="Çakallı menemeni"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%C3%87akall%C4%B1_menemeni.jpg?width=800" alt="Çakallı menemeni" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:%C3%87akall%C4%B1_menemeni.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>
-            <div class="meta"><span class="tag">Kahvaltı</span></div>
-            <h3>Çakallı menemeni</h3>
-            <p>Kavak ilçesinde, Samsun-Ankara yolu üzerindeki Çakallı mevkiinde yolcuların mola verip yediği meşhur menemen. Bakır sahanda servis ediliyor.</p>
-            
+            <div class="card-body">
+              <div class="meta"><span class="tag">Kahvaltı</span></div>
+              <h3>Çakallı menemeni</h3>
+              <p>Kavak ilçesinde, Samsun-Ankara yolu üzerindeki Çakallı mevkiinde yolcuların mola verip yediği meşhur menemen. Bakır sahanda servis ediliyor.</p>
+              
+            </div>
           </div>
-          <div class="card food-card">
+          <div class="card food-card" data-reveal style="--d:2">
             <figure class="photo " data-label="Hamsi tava"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hamsi_tava.jpg?width=800" alt="Hamsi tava" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Hamsi_tava.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>
-            <div class="meta"><span class="tag">Balık</span></div>
-            <h3>Hamsi</h3>
-            <p>Sonbahar ve kış aylarında Karadeniz'in vazgeçilmezi. Tava, buğulama ya da pilav olarak sofraya geliyor. Atakum sahilindeki balıkçılarda ve Yakakent'te taze bulunur.</p>
-            
+            <div class="card-body">
+              <div class="meta"><span class="tag">Balık</span></div>
+              <h3>Hamsi</h3>
+              <p>Sonbahar ve kış aylarında Karadeniz'in vazgeçilmezi. Tava, buğulama ya da pilav olarak sofraya geliyor. Atakum'daki balıkçılarda ve Yakakent'te taze bulunur.</p>
+              
+            </div>
           </div>
-          <div class="card food-card">
+          <div class="card food-card" data-reveal style="--d:0">
             <figure class="photo " data-label="Fasulye turşusu, turşu kavurmanın ana malzemesi"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Fasulye_tursusu.jpg?width=800" alt="Fasulye turşusu, turşu kavurmanın ana malzemesi" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Fasulye_tursusu.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>
-            <div class="meta"><span class="tag">Ev yemeği</span></div>
-            <h3>Turşu kavurma</h3>
-            <p>Fasulye turşusunun bol soğanla kavrulmasıyla yapılan, ekşimsi ve doyurucu bir Karadeniz yemeği. Fotoğraftaki turşu, yemeğin ana malzemesi.</p>
-            
+            <div class="card-body">
+              <div class="meta"><span class="tag">Ev yemeği</span></div>
+              <h3>Turşu kavurma</h3>
+              <p>Fasulye turşusunun bol soğanla kavrulmasıyla yapılan, ekşimsi ve doyurucu bir Karadeniz yemeği. Fotoğraftaki turşu, yemeğin ana malzemesi.</p>
+              
+            </div>
           </div>
         </div>
       </div>
@@ -146,8 +163,8 @@
 
     <section>
       <div class="container">
-        <div class="split">
-          <figure class="photo " data-label="Lokum"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Turkish_Delight_lokum.jpg?width=1200" alt="Lokum" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Turkish_Delight_lokum.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>
+        <div class="split" data-reveal>
+          <figure class="photo " data-label="Bakır tabakta lokum ve Türk kahvesi"><img src="https://images.pexels.com/photos/36207188/pexels-photo-36207188.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Bakır tabakta lokum ve Türk kahvesi" loading="lazy" decoding="async"><figcaption><a href="https://www.pexels.com/photo/36207188/" target="_blank" rel="noopener">Foto: Pexels</a></figcaption></figure>
           <div>
             <span class="eyebrow">Hediyelik</span>
             <h2>Tatlılar</h2>
@@ -159,37 +176,34 @@
             <div class="sweet">
               <h3>Bafra kaymaklı lokumu</h3>
               <p>Lokumun içine manda kaymağı konularak yapılıyor. Deltadaki manda sürüleriyle bu tatlının hikayesi birbirine bağlı.</p>
-              <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Bafra+kaymakl%C4%B1+lokum" target="_blank" rel="noopener" data-track="open_map" data-place="Bafra kaymaklı lokum" data-section="food"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Bafra'da lokumcu ara</a>
+              <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Bafra+kaymakl%C4%B1+lokum" target="_blank" rel="noopener" data-track="open_map" data-place="Bafra kaymaklı lokum" data-section="food"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Bafra'da lokumcu ara</span></a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="ilce-ilce" style="padding-top:0">
+    <section id="ilce-ilce" class="soft">
       <div class="container">
-        <span class="eyebrow">Harita gibi</span>
-        <h2>İlçe ilçe lezzetler</h2>
-        <p class="section-intro">Hangi ilçeye gidiyorsan orada ne yiyeceğini bu tablodan bulabilirsin. İlçelerin tanıtımı için <a href="districts.html">ilçeler sayfasına</a> bak.</p>
-        <div class="table-wrap">
+        <div class="section-head" data-reveal><span class="eyebrow">Harita gibi</span><h2>İlçe ilçe lezzetler</h2><p class="section-intro">Hangi ilçeye gidiyorsan orada ne yiyeceğini bu tablodan bulabilirsin.</p></div>
+        <div class="table-wrap" data-reveal>
           <table class="food-table">
             <thead><tr><th>İlçe</th><th>Ne yenir?</th><th>Not</th></tr></thead>
             <tbody><tr><td>Bafra</td><td>Bafra pidesi, Bafra nokulu, kaymaklı lokum</td><td>Pide sabah fırından çıkar, nokul ve lokum hediyelik</td></tr><tr><td>Çarşamba</td><td>Kaz tiridi, Çarşamba pidesi</td><td>Kaz tiridi kış ve bayram yemeği</td></tr><tr><td>Terme</td><td>Terme pidesi, Terme pirinci, lepsi</td><td>Açık pişirilen pide, ovada yetişen pirinç</td></tr><tr><td>Kavak</td><td>Çakallı menemeni</td><td>Samsun-Ankara yolundaki mola yerlerinde</td></tr><tr><td>İlkadım, Atakum, Canik</td><td>Samsun simidi, atom, sahilde balık</td><td>Merkezde ve sahilde her yerde</td></tr><tr><td>Havza</td><td>Tirit, keşkek</td><td>Kaplıca dönüşü doyurucu bir sofra</td></tr><tr><td>Alaçam</td><td>Katık böreği, pırasa kayganası, keşkek</td><td>Ev mutfağı lezzetleri</td></tr><tr><td>Yakakent</td><td>Hamsi, istavrit, palamut</td><td>Balıkçı limanından mevsim balığı</td></tr><tr><td>Ayvacık</td><td>Lepsi, kaldırık kavurması, mısır çorbası</td><td>Karadeniz köy mutfağı</td></tr><tr><td>Salıpazarı</td><td>Pancar diblesi, cızlama, fındıklı tatlılar</td><td>Fındık bahçelerinin ilçesi</td></tr><tr><td>Tüm il</td><td>Turşu kavurma, mısır çorbası, Samsun mantısı</td><td>Hemen her lokantada</td></tr></tbody>
           </table>
         </div>
-
-        <div class="prose" style="margin-top:48px">
-          <h2>Hangi öğünde ne yenir?</h2>
-          <ul>
-            <li><strong>Kahvaltı:</strong> Simit ve çay, kuymak ya da sabah fırından yeni çıkmış Bafra pidesi.</li>
-            <li><strong>Öğle:</strong> Bafra veya Terme pidesi, yanında ayran.</li>
-            <li><strong>Akşam:</strong> Kışın kaz tiridi, mevsiminde hamsi ve Karadeniz balığı.</li>
-            <li><strong>Dönüşte:</strong> Nokul ve kaymaklı lokum.</li>
-          </ul>
-          <p class="note">Mekan önerisi vermiyoruz çünkü işletmeler sık değişiyor. Haritada ilçe adıyla arama yapıp güncel yorumlara bakmak en sağlıklısı. Bazı fotoğraflar yemeğin genel halini gösteriyor, Samsun usulü sunum farklı olabilir.</p>
+        <div class="meal-grid">
+          <div class="meal" data-reveal style="--d:0"><span>Kahvaltı</span><p>Simit ve çay, kuymak ya da sabah fırından yeni çıkmış Bafra pidesi.</p></div>
+          <div class="meal" data-reveal style="--d:1"><span>Öğle</span><p>Bafra veya Terme pidesi, yanında ayran.</p></div>
+          <div class="meal" data-reveal style="--d:2"><span>Akşam</span><p>Kışın kaz tiridi, mevsiminde hamsi ve Karadeniz balığı.</p></div>
+          <div class="meal" data-reveal style="--d:3"><span>Dönüşte</span><p>Nokul ve kaymaklı lokum.</p></div>
         </div>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="itinerary.html" data-track="cta_click" data-label="food_to_itinerary">Bu lezzetler rotanın neresinde?</a>
+        <p class="note center">Mekan önerisi vermiyoruz çünkü işletmeler sık değişiyor. Bazı fotoğraflar yemeğin genel halini gösteriyor, Samsun usulü sunum farklı olabilir.</p>
+        
+        <div class="cta-band" data-reveal>
+          <h2>Lezzetler rotanın neresinde?</h2>
+          <p>İki günlük rotada her öğünü hangi ilçede yiyeceğini de planladık.</p>
+          <div class="btn-row center"><a class="btn btn-primary" href="itinerary.html" data-track="cta_click" data-label="food_to_itinerary"><span>Rotayı aç</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a><a class="btn btn-outline" href="districts.html" data-track="cta_click" data-label="food_to_districts"><span>İlçeleri gör</span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg></a></div>
         </div>
         <div data-read-end></div>
       </div>
@@ -198,17 +212,13 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>Samsun Rehberi &middot; Bağımsız bir gezi rehberidir. Fotoğraflar Wikimedia Commons'tan, lisans bilgileri <a href="about.html#gorseller">Hakkında</a> sayfasında.</p>
-      <nav aria-label="Alt menü">
-        <a href="places.html">Gezilecek Yerler</a>
-        <a href="atakum.html">Atakum</a>
-        <a href="districts.html">İlçeler</a>
-        <a href="food.html">Ne Yenir?</a>
-        <a href="itinerary.html">Rota</a>
-        <a href="practical.html">Pratik Bilgiler</a>
-        <a href="about.html">Hakkında ve Gizlilik</a>
-      </nav>
+    <div class="container footer-inner">
+      <a class="footer-brand" href="index.html"><svg class="logo" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="lg-sea" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#14435a"/><stop offset="1" stop-color="#0a1f2c"/></linearGradient><linearGradient id="lg-sun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc07a"/><stop offset="1" stop-color="#e76f51"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#lg-sea)"/><circle cx="40" cy="27" r="12" fill="url(#lg-sun)"/><path d="M20 22v18" stroke="#fff" stroke-width="2" stroke-linecap="round"/><path d="M21 22.5l7 2.5-7 2.5z" fill="#e76f51"/><rect x="31" y="27" width="5.5" height="8" rx="1" fill="#fff"/><rect x="31" y="29" width="5.5" height="1.8" fill="#e76f51"/><rect x="24" y="34" width="20" height="6" rx="1.2" fill="#fff"/><path d="M11 40h42l-5.5 7.5h-31z" fill="#fff"/><path d="M6 52c4 0 4-2.6 8-2.6s4 2.6 8 2.6 4-2.6 8-2.6 4 2.6 8 2.6 4-2.6 8-2.6 4 2.6 8 2.6" fill="none" stroke="#8fd3dc" stroke-width="2.6" stroke-linecap="round"/><path d="M12 58c4 0 4-2.2 8-2.2s4 2.2 8 2.2 4-2.2 8-2.2 4 2.2 8 2.2 4-2.2 8-2.2" fill="none" stroke="#8fd3dc" stroke-width="2" stroke-linecap="round" opacity=".55"/></svg><span>Samsun Rehberi</span></a>
+      <p class="footer-tag">Karadeniz'in incisine sade, reklamsız ve güncel bir rehber.</p>
+      <nav class="footer-nav" aria-label="Alt menü"><a href="index.html">Anasayfa</a><a href="places.html">Gezilecek Yerler</a><a href="atakum.html">Atakum</a><a href="districts.html">İlçeler</a><a href="food.html">Ne Yenir?</a><a href="itinerary.html">2 Günlük Rota</a><a href="practical.html">Pratik Bilgiler</a><a href="about.html">Hakkında</a></nav>
+      <p class="footer-author">Hazırlayan <strong>Eren İşci</strong> &middot; Web Analitiği dersi projesi &middot; 2026</p>
+      <p class="footer-note">Fotoğraflar Wikimedia Commons ve Pexels'ten, lisans bilgileri <a href="about.html#gorseller">Hakkında</a> sayfasında. Bağımsız bir gezi rehberidir, resmi bir kurumla ilişkisi yoktur.</p>
+      <a class="to-top" href="#main" aria-label="Sayfanın başına dön"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="M6 11l6-6 6 6"/></svg></a>
     </div>
   </footer>
 

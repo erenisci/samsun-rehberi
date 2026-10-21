@@ -41,6 +41,8 @@ The event code lives in `js/main.js`.
 
 - Plain HTML, CSS and JavaScript. No framework, no build step.
 - Responsive layout with a mobile menu, keyboard focus styles and a skip link.
+- Hero photo slideshow, scroll reveal animations and cross-page view transitions, all disabled when the visitor prefers reduced motion.
+- Original logo and favicon drawn as SVG.
 - Deployed on Vercel. `vercel.json` enables clean URLs (`/atakum` instead of `/atakum.html`).
 
 ```
@@ -64,7 +66,7 @@ Opening the HTML files directly in a browser also works.
 
 ## Images
 
-All photos are freely licensed images from [Wikimedia Commons](https://commons.wikimedia.org). Each photo links to its source page with the author and license. The full list is on `about.html`. Some food photos show the dish in general and may differ from the Samsun-style serving.
+All photos are freely licensed images from [Wikimedia Commons](https://commons.wikimedia.org) and [Pexels](https://www.pexels.com/license/). Each photo links to its source page with the author and license. The full list is on `about.html`. Some food photos show the dish in general and may differ from the Samsun-style serving.
 
 ## Privacy
 
