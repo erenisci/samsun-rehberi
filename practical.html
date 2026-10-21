@@ -31,8 +31,11 @@
   <header class="site-header">
     <div class="container">
       <a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0e2a3a"/><circle cx="16" cy="14" r="6" fill="#c0622f"/><path d="M4 21c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2v7H4z" fill="#2a7a8c"/><path d="M4 25c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2v3H4z" fill="#dcecef"/></svg>Samsun Rehberi</a>
-      <nav class="site-nav" aria-label="Ana menü">
-        <a href="index.html">Anasayfa</a><a href="atakum.html">Atakum</a><a href="districts.html">İlçeler</a><a href="places.html">Gezilecek Yerler</a><a href="food.html">Ne Yenir?</a><a href="itinerary.html">Rota</a><a href="practical.html" aria-current="page">Pratik Bilgiler</a><a href="about.html">Hakkında</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Ana menü">
+        <a href="index.html">Anasayfa</a><a href="places.html">Gezilecek Yerler</a><a href="atakum.html">Atakum</a><a href="districts.html">İlçeler</a><a href="food.html">Ne Yenir?</a><a href="itinerary.html">2 Günlük Rota</a><a href="practical.html" aria-current="page">Pratik Bilgiler</a><a href="about.html">Hakkında</a>
       </nav>
     </div>
   </header>
@@ -49,32 +52,34 @@
     <section>
       <div class="container">
         <div class="grid grid-3">
-          <div class="card">
-            <div class="meta"><span class="tag">Uçak</span></div>
+          <div class="card info-card">
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16l20-7-3-2-8 3-5-4-2 1 3 5-4 2z"/><path d="M6 21h12"/></svg></div>
             <h3>Havalimanı</h3>
             <p>Samsun Çarşamba Havalimanı, şehir merkezinin doğusunda Çarşamba ilçesinde. İstanbul ve Ankara başta olmak üzere birçok şehirden düzenli uçuş var. Merkeze servis ve taksiyle ulaşılıyor.</p>
           </div>
-          <div class="card">
-            <div class="meta"><span class="tag">Otobüs</span></div>
-            <h3>Şehirlerarası</h3>
+          <div class="card info-card">
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="15" rx="2"/><path d="M4 11h16"/><circle cx="8" cy="15" r="1"/><circle cx="16" cy="15" r="1"/><path d="M7 18v3M17 18v3"/></svg></div>
+            <h3>Şehirlerarası otobüs</h3>
             <p>Samsun, Karadeniz sahil yolunun ve Anadolu'ya inen yolların kavşağında olduğu için hemen her şehirden doğrudan otobüs seferi bulunuyor.</p>
           </div>
-          <div class="card">
-            <figure class="photo " data-label="Samsun tramvay hattı"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/T1_Tramvay_Hatt%C4%B1_2025.jpg?width=800" alt="Samsun tramvay hattı" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:T1_Tramvay_Hatt%C4%B1_2025.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>
-            <div class="meta"><span class="tag">Şehir içi</span></div>
+          <div class="card info-card">
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="5" width="14" height="13" rx="3"/><path d="M5 12h14"/><path d="M9 2h6M12 2v3"/><path d="M8 18l-2 3M16 18l2 3"/></svg></div>
             <h3>Tramvay ve otobüs</h3>
             <p>Sahile paralel uzanan tramvay hattı merkez ile Atakum'daki üniversite arasında en pratik ulaşım. İlçeler için araç kiralamak zaman kazandırır.</p>
           </div>
         </div>
 
-        <div class="prose" style="margin-top:56px">
-          <h2>Hangi mevsimde gitmeli?</h2>
-          <ul>
-            <li><strong>İlkbahar (Nisan-Mayıs):</strong> Delta yeşeriyor ve kuş göçü başlıyor. Mayıs'ta 19 Mayıs etkinlikleri şehre ayrı bir hava katıyor, bu dönemde konaklama erken doluyor.</li>
-            <li><strong>Yaz (Haziran-Ağustos):</strong> Deniz sezonu. Atakum sahili en kalabalık halinde. Yakakent ve Alaçam'ın sakin plajları alternatif.</li>
-            <li><strong>Sonbahar (Eylül-Kasım):</strong> Kuş gözlemi için en verimli dönemlerden biri. Hamsi sezonu da açılıyor.</li>
-            <li><strong>Kış:</strong> Kaz tiridi mevsimi. Ladik'teki Akdağ'da kayak, Havza'da kaplıca keyfi.</li>
-          </ul>
+        <div class="split" style="margin-top:56px">
+          <div class="prose">
+            <h2>Hangi mevsimde gitmeli?</h2>
+            <ul>
+              <li><strong>İlkbahar (Nisan-Mayıs):</strong> Delta yeşeriyor ve kuş göçü başlıyor. 19 Mayıs etkinlikleri şehre ayrı bir hava katıyor, bu dönemde konaklama erken doluyor.</li>
+              <li><strong>Yaz (Haziran-Ağustos):</strong> Deniz sezonu. Atakum sahili en kalabalık halinde. Yakakent ve Alaçam'ın sakin plajları alternatif.</li>
+              <li><strong>Sonbahar (Eylül-Kasım):</strong> Kuş gözlemi için en verimli dönemlerden biri. Hamsi sezonu da açılıyor.</li>
+              <li><strong>Kış:</strong> Kaz tiridi mevsimi. Ladik'teki Akdağ'da kayak, Havza'da kaplıca keyfi.</li>
+            </ul>
+          </div>
+          <figure class="photo " data-label="Samsun tramvay hattı"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/T1_Tramvay_Hatt%C4%B1_2025.jpg?width=1200" alt="Samsun tramvay hattı" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:T1_Tramvay_Hatt%C4%B1_2025.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure>
         </div>
       </div>
     </section>
@@ -102,9 +107,9 @@
     <div class="container">
       <p>Samsun Rehberi &middot; Bağımsız bir gezi rehberidir. Fotoğraflar Wikimedia Commons'tan, lisans bilgileri <a href="about.html#gorseller">Hakkında</a> sayfasında.</p>
       <nav aria-label="Alt menü">
+        <a href="places.html">Gezilecek Yerler</a>
         <a href="atakum.html">Atakum</a>
         <a href="districts.html">İlçeler</a>
-        <a href="places.html">Gezilecek Yerler</a>
         <a href="food.html">Ne Yenir?</a>
         <a href="itinerary.html">Rota</a>
         <a href="practical.html">Pratik Bilgiler</a>

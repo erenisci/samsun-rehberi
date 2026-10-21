@@ -31,8 +31,11 @@
   <header class="site-header">
     <div class="container">
       <a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0e2a3a"/><circle cx="16" cy="14" r="6" fill="#c0622f"/><path d="M4 21c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2v7H4z" fill="#2a7a8c"/><path d="M4 25c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2v3H4z" fill="#dcecef"/></svg>Samsun Rehberi</a>
-      <nav class="site-nav" aria-label="Ana menü">
-        <a href="index.html">Anasayfa</a><a href="atakum.html" aria-current="page">Atakum</a><a href="districts.html">İlçeler</a><a href="places.html">Gezilecek Yerler</a><a href="food.html">Ne Yenir?</a><a href="itinerary.html">Rota</a><a href="practical.html">Pratik Bilgiler</a><a href="about.html">Hakkında</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Ana menü">
+        <a href="index.html">Anasayfa</a><a href="places.html">Gezilecek Yerler</a><a href="atakum.html" aria-current="page">Atakum</a><a href="districts.html">İlçeler</a><a href="food.html">Ne Yenir?</a><a href="itinerary.html">2 Günlük Rota</a><a href="practical.html">Pratik Bilgiler</a><a href="about.html">Hakkında</a>
       </nav>
     </div>
   </header>
@@ -127,25 +130,25 @@
         <p class="section-intro">Atakum sadece sahilden ibaret değil. İlçenin güneyindeki tepeler ormanlarla kaplı ve şehirden kaçmak isteyenler için birkaç güzel adres var.</p>
         <div class="grid grid-4">
           <div class="card">
-            <div class="banner-art art-forest" role="img" aria-label="Çakırlar Korusu"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M5 100 L18 55 L31 100Z M22 100 L38 45 L54 100Z M46 100 L60 58 L74 100Z M66 100 L82 40 L98 100Z" fill="rgba(255,255,255,0.14)"/></svg><span>Çakırlar Korusu</span></div>
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-6"/><path d="M8 16h8l-4-6 3 0-3-5-3 5 3 0z"/></svg></div>
             <h3>Çakırlar Korusu</h3>
             <p>Yaşlı Karadeniz ağaçlarıyla kaplı koru, piknik alanları, yürüyüş parkurları, çocuk oyun alanları ve kafesiyle hafta sonu kaçamaklarının klasik adresi. Mangal yapılabilen alanlar da var.</p>
             <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=%C3%87ak%C4%B1rlar+Korusu+Atakum" target="_blank" rel="noopener" data-track="open_map" data-place="Çakırlar Korusu" data-section="atakum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Haritada aç</a>
           </div>
           <div class="card">
-            <div class="banner-art art-mountain" role="img" aria-label="Atakum Kent Ormanı"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 100 L30 45 L48 70 L68 30 L100 100Z" fill="rgba(255,255,255,0.15)"/><path d="M62 41 L68 30 L74 42Z" fill="rgba(255,255,255,0.5)"/></svg><span>Atakum Kent Ormanı</span></div>
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22v-6"/><path d="M8 16h8l-4-6 3 0-3-5-3 5 3 0z"/></svg></div>
             <h3>Atakum Kent Ormanı</h3>
             <p>İlçenin yukarı kesimlerinde, yürüyüş yolları ve piknik masalarıyla düzenlenmiş geniş bir orman alanı. Seyir noktasından şehri ve Karadeniz'i aynı karede görebiliyorsun.</p>
             <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Atakum+Kent+Orman%C4%B1" target="_blank" rel="noopener" data-track="open_map" data-place="Atakum Kent Ormanı" data-section="atakum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Haritada aç</a>
           </div>
           <div class="card">
-            <div class="banner-art art-sea" role="img" aria-label="Sukay Park"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 Q25 62 50 70 T100 70 V100 H0Z" fill="rgba(255,255,255,0.12)"/><path d="M0 80 Q25 72 50 80 T100 80 V100 H0Z" fill="rgba(255,255,255,0.16)"/><circle cx="78" cy="30" r="11" fill="rgba(240,180,143,0.55)"/></svg><span>Sukay Park</span></div>
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"/><path d="M2 17c2 0 2-2 4-2s2 2 4 2 2-2 4-2 2 2 4 2 2-2 4-2"/></svg></div>
             <h3>Sukay Park</h3>
             <p>Kablolu su kayağı yapılabilen bir su sporları alanı. Daha önce hiç denemediysen bile yaz aylarında heyecanlı bir deneyim.</p>
             <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Sukay+Park+Atakum" target="_blank" rel="noopener" data-track="open_map" data-place="Sukay Park" data-section="atakum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Haritada aç</a>
           </div>
           <div class="card">
-            <div class="banner-art art-plain" role="img" aria-label="Golf sahası"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 78 Q30 64 60 76 T100 72 V100 H0Z" fill="rgba(255,255,255,0.15)"/><path d="M0 88 Q35 78 70 88 T100 86 V100 H0Z" fill="rgba(255,255,255,0.18)"/></svg><span>Golf sahası</span></div>
+            <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22V3"/><path d="M5 4h11l-2 4 2 4H5"/></svg></div>
             <h3>Golf sahası</h3>
             <p>Atakum'da kulüp binası ve restoranı olan 18 delikli bir golf sahası bulunuyor. Karadeniz'de bu tür tesislerin az olduğu düşünülürse bölge için farklı bir seçenek.</p>
           </div>
@@ -181,6 +184,7 @@
     <section style="padding-top:0">
       <div class="container prose">
         <span class="eyebrow">Biraz tarih</span>
+        <div class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V9h3V6h2v3h2V6h2v3h2V6h2v3h3v12z"/><path d="M10 21v-4a2 2 0 0 1 4 0v4"/></svg></div>
         <h2>Akalan Kalesi</h2>
         <p>Atakum'un iç kesiminde, Akalan mahallesinde bulunan antik kale kalıntıları, Samsun çevresindeki erken yerleşimlerle ilişkilendiriliyor. Sahil kalabalığından uzak, tarih meraklıları için sakin bir durak.</p>
         <a class="map-link" href="https://www.google.com/maps/search/?api=1&amp;query=Akalan+Kalesi+Atakum" target="_blank" rel="noopener" data-track="open_map" data-place="Akalan Kalesi" data-section="atakum"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Haritada aç</a>
@@ -225,9 +229,9 @@
     <div class="container">
       <p>Samsun Rehberi &middot; Bağımsız bir gezi rehberidir. Fotoğraflar Wikimedia Commons'tan, lisans bilgileri <a href="about.html#gorseller">Hakkında</a> sayfasında.</p>
       <nav aria-label="Alt menü">
+        <a href="places.html">Gezilecek Yerler</a>
         <a href="atakum.html">Atakum</a>
         <a href="districts.html">İlçeler</a>
-        <a href="places.html">Gezilecek Yerler</a>
         <a href="food.html">Ne Yenir?</a>
         <a href="itinerary.html">Rota</a>
         <a href="practical.html">Pratik Bilgiler</a>

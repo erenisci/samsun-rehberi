@@ -31,8 +31,11 @@
   <header class="site-header">
     <div class="container">
       <a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0e2a3a"/><circle cx="16" cy="14" r="6" fill="#c0622f"/><path d="M4 21c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2v7H4z" fill="#2a7a8c"/><path d="M4 25c3 0 3-2 6-2s3 2 6 2 3-2 6-2 3 2 6 2v3H4z" fill="#dcecef"/></svg>Samsun Rehberi</a>
-      <nav class="site-nav" aria-label="Ana menü">
-        <a href="index.html">Anasayfa</a><a href="atakum.html">Atakum</a><a href="districts.html" aria-current="page">İlçeler</a><a href="places.html">Gezilecek Yerler</a><a href="food.html">Ne Yenir?</a><a href="itinerary.html">Rota</a><a href="practical.html">Pratik Bilgiler</a><a href="about.html">Hakkında</a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menüyü aç">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Ana menü">
+        <a href="index.html">Anasayfa</a><a href="places.html">Gezilecek Yerler</a><a href="atakum.html">Atakum</a><a href="districts.html" aria-current="page">İlçeler</a><a href="food.html">Ne Yenir?</a><a href="itinerary.html">2 Günlük Rota</a><a href="practical.html">Pratik Bilgiler</a><a href="about.html">Hakkında</a>
       </nav>
     </div>
   </header>
@@ -68,7 +71,7 @@
         </div>
         
         <article class="district" id="ilkadim">
-          <div><figure class="photo " data-label="İlkadım"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Onur_An%C4%B1t%C4%B1,_Samsun.jpg?width=1200" alt="İlkadım'daki Onur Anıtı" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Onur_An%C4%B1t%C4%B1,_Samsun.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure></div>
+          <div class="district-media"><figure class="photo " data-label="İlkadım"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Onur_An%C4%B1t%C4%B1,_Samsun.jpg?width=1200" alt="İlkadım'daki Onur Anıtı" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Onur_An%C4%B1t%C4%B1,_Samsun.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%C4%B0lkad%C4%B1m_District_Location_in_Samsun_Province.png?width=400" alt="İlkadım ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>İlkadım</h3>
             <div class="district-facts"><span class="tag">Merkez ilçe</span><span class="tag">Tarih</span><span class="tag">Müzeler</span></div>
@@ -81,7 +84,7 @@
           </div>
         </article>
         <article class="district" id="atakum">
-          <div><figure class="photo " data-label="Atakum"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Atakum_sahil_yolu.jpg?width=1200" alt="Atakum sahil yolu" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Atakum_sahil_yolu.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure></div>
+          <div class="district-media"><figure class="photo " data-label="Atakum"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Atakum_sahil_yolu.jpg?width=1200" alt="Atakum sahil yolu" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Atakum_sahil_yolu.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Atakum_District_Location_in_Samsun_Province.png?width=400" alt="Atakum ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Atakum</h3>
             <div class="district-facts"><span class="tag">Sahil</span><span class="tag">Öğrenci kenti</span><span class="tag">Gece hayatı</span></div>
@@ -94,7 +97,7 @@
           </div>
         </article>
         <article class="district" id="canik">
-          <div><figure class="photo " data-label="Canik"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Band%C4%B1rma_Vapuru_M%C3%BCzesi_ve_Mill%C3%AE_Kurtulu%C5%9F_An%C4%B1t%C4%B1.JPG?width=1200" alt="Bandırma Vapuru Müzesi" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Band%C4%B1rma_Vapuru_M%C3%BCzesi_ve_Mill%C3%AE_Kurtulu%C5%9F_An%C4%B1t%C4%B1.JPG" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure></div>
+          <div class="district-media"><figure class="photo " data-label="Canik"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Band%C4%B1rma_Vapuru_M%C3%BCzesi_ve_Mill%C3%AE_Kurtulu%C5%9F_An%C4%B1t%C4%B1.JPG?width=1200" alt="Bandırma Vapuru Müzesi" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Band%C4%B1rma_Vapuru_M%C3%BCzesi_ve_Mill%C3%AE_Kurtulu%C5%9F_An%C4%B1t%C4%B1.JPG" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Canik_District_Location_in_Samsun_Province.png?width=400" alt="Canik ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Canik</h3>
             <div class="district-facts"><span class="tag">Merkez ilçe</span><span class="tag">Milli Mücadele</span></div>
@@ -107,7 +110,7 @@
           </div>
         </article>
         <article class="district" id="tekkekoy">
-          <div><figure class="photo " data-label="Tekkeköy"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%C4%B0lkel_insan_heykeli.JPG?width=1200" alt="Tekkeköy Arkeoloji Vadisi'ndeki canlandırma heykeli" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:%C4%B0lkel_insan_heykeli.JPG" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure></div>
+          <div class="district-media"><figure class="photo " data-label="Tekkeköy"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%C4%B0lkel_insan_heykeli.JPG?width=1200" alt="Tekkeköy Arkeoloji Vadisi'ndeki canlandırma heykeli" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:%C4%B0lkel_insan_heykeli.JPG" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tekkek%C3%B6y_District_Location_in_Samsun_Province.png?width=400" alt="Tekkeköy ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Tekkeköy</h3>
             <div class="district-facts"><span class="tag">Arkeoloji</span><span class="tag">Doğa</span></div>
@@ -126,7 +129,7 @@
         </div>
         
         <article class="district" id="19-mayis">
-          <div><div class="banner-art art-sea" role="img" aria-label="19 Mayıs"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 Q25 62 50 70 T100 70 V100 H0Z" fill="rgba(255,255,255,0.12)"/><path d="M0 80 Q25 72 50 80 T100 80 V100 H0Z" fill="rgba(255,255,255,0.16)"/><circle cx="78" cy="30" r="11" fill="rgba(240,180,143,0.55)"/></svg><span>19 Mayıs</span></div></div>
+          <div class="district-media"><figure class="photo " data-label="19 Mayıs"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tepeli_pelikan.jpg?width=1200" alt="Kızılırmak Deltası'nda görülen tepeli pelikan" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Tepeli_pelikan.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ondokuzmay%C4%B1s_District_Location_in_Samsun_Province.png?width=400" alt="19 Mayıs ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>19 Mayıs</h3>
             <div class="district-facts"><span class="tag">Delta</span><span class="tag">Sahil</span><span class="tag">Tarım</span></div>
@@ -139,7 +142,7 @@
           </div>
         </article>
         <article class="district" id="bafra">
-          <div><figure class="photo " data-label="Bafra"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bafra_k%C4%B1z%C4%B1l%C4%B1rmak_bridge,_k%C4%B1z%C4%B1l%C4%B1rmak_delta.jpg?width=1200" alt="Bafra'da Kızılırmak köprüsü" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Bafra_k%C4%B1z%C4%B1l%C4%B1rmak_bridge,_k%C4%B1z%C4%B1l%C4%B1rmak_delta.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure></div>
+          <div class="district-media"><figure class="photo " data-label="Bafra"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bafra_k%C4%B1z%C4%B1l%C4%B1rmak_bridge,_k%C4%B1z%C4%B1l%C4%B1rmak_delta.jpg?width=1200" alt="Bafra'da Kızılırmak köprüsü" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Bafra_k%C4%B1z%C4%B1l%C4%B1rmak_bridge,_k%C4%B1z%C4%B1l%C4%B1rmak_delta.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bafra_District_Location_in_Samsun_Province.png?width=400" alt="Bafra ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Bafra</h3>
             <div class="district-facts"><span class="tag">Delta</span><span class="tag">Pide</span><span class="tag">Tarih</span></div>
@@ -152,7 +155,7 @@
           </div>
         </article>
         <article class="district" id="alacam">
-          <div><div class="banner-art art-sea" role="img" aria-label="Alaçam"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 Q25 62 50 70 T100 70 V100 H0Z" fill="rgba(255,255,255,0.12)"/><path d="M0 80 Q25 72 50 80 T100 80 V100 H0Z" fill="rgba(255,255,255,0.16)"/><circle cx="78" cy="30" r="11" fill="rgba(240,180,143,0.55)"/></svg><span>Alaçam</span></div></div>
+          <div class="district-media"><figure class="photo " data-label="Alaçam"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/55800_Yenik%C3%B6y-Ala%C3%A7am-Samsun,_Turkey_-_panoramio.jpg?width=1200" alt="Alaçam'ın Yeniköy mahallesinden görünüm" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:55800_Yenik%C3%B6y-Ala%C3%A7am-Samsun,_Turkey_-_panoramio.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ala%C3%A7am_District_Location_in_Samsun_Province.png?width=400" alt="Alaçam ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Alaçam</h3>
             <div class="district-facts"><span class="tag">Sahil</span><span class="tag">Mübadele</span></div>
@@ -165,7 +168,7 @@
           </div>
         </article>
         <article class="district" id="yakakent">
-          <div><div class="banner-art art-forest" role="img" aria-label="Yakakent"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M5 100 L18 55 L31 100Z M22 100 L38 45 L54 100Z M46 100 L60 58 L74 100Z M66 100 L82 40 L98 100Z" fill="rgba(255,255,255,0.14)"/></svg><span>Yakakent</span></div></div>
+          <div class="district-media"><figure class="photo " data-label="Yakakent"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hamsi_tava.jpg?width=1200" alt="Hamsi tava, Karadeniz kıyısının mevsim balığı" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Hamsi_tava.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Yakakent_District_Location_in_Samsun_Province.png?width=400" alt="Yakakent ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Yakakent</h3>
             <div class="district-facts"><span class="tag">Balıkçılık</span><span class="tag">Sahil</span></div>
@@ -184,7 +187,7 @@
         </div>
         
         <article class="district" id="carsamba">
-          <div><figure class="photo " data-label="Çarşamba"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/G%C3%B6%C4%9Fceli_Camii.JPG?width=1200" alt="Çarşamba'daki Göğceli Camii" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:G%C3%B6%C4%9Fceli_Camii.JPG" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure></div>
+          <div class="district-media"><figure class="photo " data-label="Çarşamba"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%C3%87ar%C5%9Famba_il%C3%A7esinden_g%C3%B6r%C3%BCn%C3%BCm.JPG?width=1200" alt="Çarşamba ilçesinden görünüm" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:%C3%87ar%C5%9Famba_il%C3%A7esinden_g%C3%B6r%C3%BCn%C3%BCm.JPG" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%C3%87ar%C5%9Famba_District_Location_in_Samsun_Province.png?width=400" alt="Çarşamba ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Çarşamba</h3>
             <div class="district-facts"><span class="tag">Ahşap mimari</span><span class="tag">Kaz tiridi</span><span class="tag">Havalimanı</span></div>
@@ -197,7 +200,7 @@
           </div>
         </article>
         <article class="district" id="terme">
-          <div><figure class="photo " data-label="Terme"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sahil_yolundan_,_terme_,_samsun_,_turkey_-_panoramio.jpg?width=1200" alt="Terme sahil yolu" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Sahil_yolundan_,_terme_,_samsun_,_turkey_-_panoramio.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure></div>
+          <div class="district-media"><figure class="photo " data-label="Terme"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sahil_yolundan_,_terme_,_samsun_,_turkey_-_panoramio.jpg?width=1200" alt="Terme sahil yolu" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Sahil_yolundan_,_terme_,_samsun_,_turkey_-_panoramio.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Terme_District_Location_in_Samsun_Province.png?width=400" alt="Terme ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Terme</h3>
             <div class="district-facts"><span class="tag">Amazon efsanesi</span><span class="tag">Pirinç</span><span class="tag">Lagün</span></div>
@@ -216,7 +219,7 @@
         </div>
         
         <article class="district" id="kavak">
-          <div><div class="banner-art art-plain" role="img" aria-label="Kavak"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 78 Q30 64 60 76 T100 72 V100 H0Z" fill="rgba(255,255,255,0.15)"/><path d="M0 88 Q35 78 70 88 T100 86 V100 H0Z" fill="rgba(255,255,255,0.18)"/></svg><span>Kavak</span></div></div>
+          <div class="district-media"><figure class="photo " data-label="Kavak"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%C3%87akall%C4%B1_menemeni.jpg?width=1200" alt="Kavak'taki Çakallı mevkiinin meşhur menemeni" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:%C3%87akall%C4%B1_menemeni.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kavak_District_Location_in_Samsun_Province.png?width=400" alt="Kavak ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Kavak</h3>
             <div class="district-facts"><span class="tag">Yol üstü</span><span class="tag">Güreş</span></div>
@@ -229,7 +232,7 @@
           </div>
         </article>
         <article class="district" id="havza">
-          <div><div class="banner-art art-clay" role="img" aria-label="Havza"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><circle cx="50" cy="62" r="20" fill="rgba(255,255,255,0.12)"/><path d="M0 82 Q50 70 100 82 V100 H0Z" fill="rgba(255,255,255,0.16)"/></svg><span>Havza</span></div></div>
+          <div class="district-media"><figure class="photo " data-label="Havza"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Havza_station.jpg?width=1200" alt="Havza'nın tarihi gar binası" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Havza_station.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Havza_District_Location_in_Samsun_Province.png?width=400" alt="Havza ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Havza</h3>
             <div class="district-facts"><span class="tag">Milli Mücadele</span><span class="tag">Kaplıca</span></div>
@@ -242,7 +245,7 @@
           </div>
         </article>
         <article class="district" id="ladik">
-          <div><div class="banner-art art-mountain" role="img" aria-label="Ladik"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 100 L30 45 L48 70 L68 30 L100 100Z" fill="rgba(255,255,255,0.15)"/><path d="M62 41 L68 30 L74 42Z" fill="rgba(255,255,255,0.5)"/></svg><span>Ladik</span></div></div>
+          <div class="district-media"><figure class="photo " data-label="Ladik"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ladik_G%C3%B6l%C3%BC'nde_Otlanan_%C4%B0nek.jpg?width=1200" alt="Ladik Gölü kıyısında otlayan inekler" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Ladik_G%C3%B6l%C3%BC'nde_Otlanan_%C4%B0nek.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ladik_District_Location_in_Samsun_Province.png?width=400" alt="Ladik ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Ladik</h3>
             <div class="district-facts"><span class="tag">Göl</span><span class="tag">Kayak</span><span class="tag">Kaplıca</span></div>
@@ -255,7 +258,7 @@
           </div>
         </article>
         <article class="district" id="vezirkopru">
-          <div><figure class="photo " data-label="Vezirköprü"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Vezirk%C3%B6pr%C3%BC_Saat_Kulesi.jpg?width=1200" alt="Vezirköprü saat kulesi" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Vezirk%C3%B6pr%C3%BC_Saat_Kulesi.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure></div>
+          <div class="district-media"><figure class="photo " data-label="Vezirköprü"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/%C5%9Eahinkaya_Kanyonu,_Vezirk%C3%B6pr%C3%BC,_Samsun.jpg?width=1200" alt="Vezirköprü'deki Şahinkaya Kanyonu" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:%C5%9Eahinkaya_Kanyonu,_Vezirk%C3%B6pr%C3%BC,_Samsun.jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Vezirk%C3%B6pr%C3%BC_District_Location_in_Samsun_Province.png?width=400" alt="Vezirköprü ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Vezirköprü</h3>
             <div class="district-facts"><span class="tag">Kanyon</span><span class="tag">Osmanlı mimarisi</span></div>
@@ -268,7 +271,7 @@
           </div>
         </article>
         <article class="district" id="asarcik">
-          <div><div class="banner-art art-forest" role="img" aria-label="Asarcık"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M5 100 L18 55 L31 100Z M22 100 L38 45 L54 100Z M46 100 L60 58 L74 100Z M66 100 L82 40 L98 100Z" fill="rgba(255,255,255,0.14)"/></svg><span>Asarcık</span></div></div>
+          <div class="district-media map-only"><figure class="photo locator-main" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Asarc%C4%B1k_District_Location_in_Samsun_Province.png?width=400" alt="Asarcık ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Asarcık</h3>
             <div class="district-facts"><span class="tag">Ahşap camiler</span><span class="tag">Orman</span></div>
@@ -281,7 +284,7 @@
           </div>
         </article>
         <article class="district" id="ayvacik">
-          <div><div class="banner-art art-sea" role="img" aria-label="Ayvacık"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 Q25 62 50 70 T100 70 V100 H0Z" fill="rgba(255,255,255,0.12)"/><path d="M0 80 Q25 72 50 80 T100 80 V100 H0Z" fill="rgba(255,255,255,0.16)"/><circle cx="78" cy="30" r="11" fill="rgba(240,180,143,0.55)"/></svg><span>Ayvacık</span></div></div>
+          <div class="district-media map-only"><figure class="photo locator-main" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Ayvac%C4%B1k_District_Location_in_Samsun_Province.png?width=400" alt="Ayvacık ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Ayvacık</h3>
             <div class="district-facts"><span class="tag">Baraj gölleri</span><span class="tag">Fındık</span></div>
@@ -294,7 +297,7 @@
           </div>
         </article>
         <article class="district" id="salipazari">
-          <div><div class="banner-art art-forest" role="img" aria-label="Salıpazarı"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M5 100 L18 55 L31 100Z M22 100 L38 45 L54 100Z M46 100 L60 58 L74 100Z M66 100 L82 40 L98 100Z" fill="rgba(255,255,255,0.14)"/></svg><span>Salıpazarı</span></div></div>
+          <div class="district-media"><figure class="photo " data-label="Salıpazarı"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Hazelnuts_(Corylus_avellana).jpg?width=1200" alt="Salıpazarı ekonomisinin temeli olan fındık" loading="lazy" decoding="async"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Hazelnuts_(Corylus_avellana).jpg" target="_blank" rel="noopener">Foto: Wikimedia Commons</a></figcaption></figure><figure class="photo locator" data-label=""><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Sal%C4%B1pazar%C4%B1_District_Location_in_Samsun_Province.png?width=400" alt="Salıpazarı ilçesinin Samsun içindeki konumu" loading="lazy" decoding="async"></figure></div>
           <div>
             <h3>Salıpazarı</h3>
             <div class="district-facts"><span class="tag">Fındık</span><span class="tag">Şelaleler</span></div>
@@ -321,9 +324,9 @@
     <div class="container">
       <p>Samsun Rehberi &middot; Bağımsız bir gezi rehberidir. Fotoğraflar Wikimedia Commons'tan, lisans bilgileri <a href="about.html#gorseller">Hakkında</a> sayfasında.</p>
       <nav aria-label="Alt menü">
+        <a href="places.html">Gezilecek Yerler</a>
         <a href="atakum.html">Atakum</a>
         <a href="districts.html">İlçeler</a>
-        <a href="places.html">Gezilecek Yerler</a>
         <a href="food.html">Ne Yenir?</a>
         <a href="itinerary.html">Rota</a>
         <a href="practical.html">Pratik Bilgiler</a>

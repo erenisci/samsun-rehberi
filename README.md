@@ -1,71 +1,75 @@
-# Samsun Rehberi
+# Samsun City Guide
 
-Samsun'u ilk kez ziyaret edecekler için hazırlanmış, Google Analytics 4 ile ölçümlenen statik bir şehir rehberi. Yüksek lisans **Web Analitiği** dersi kapsamında geliştirildi.
+**English** | [Türkçe](README.tr.md)
 
-**Canlı site:** https://samsun-rehberi.vercel.app
+A static travel guide to Samsun, Türkiye, instrumented with Google Analytics 4 and custom events. Built for a master's level **Web Analytics** course.
 
-## İçerik
+**Live site:** https://samsun-rehberi.vercel.app
 
-| Sayfa | Açıklama |
-|---|---|
-| `index.html` | Anasayfa, rehberin bölümleri ve öne çıkan yerler |
-| `atakum.html` | Atakum rehberi: sahil, Batıpark ve Amazon Köyü, Çobanlı İskelesi, bir günlük rota |
-| `districts.html` | Samsun'un 17 ilçesinin tanıtımı, görülecek yerleri ve lezzetleri |
-| `places.html` | Merkezde ve çevrede görülmeye değer 12 durak |
-| `food.html` | Yöresel lezzetler ve ilçe ilçe lezzet tablosu |
-| `itinerary.html` | Saat saat planlanmış iki günlük gezi rotası |
-| `practical.html` | Ulaşım, mevsimler ve sık sorulan sorular |
-| `about.html` | Hakkında, görsel kaynakları ve gizlilik bilgilendirmesi |
+The site content is in Turkish.
 
-## Ölçüm planı
+## Pages
 
-Site, GA4 Geliştirilmiş Ölçüm ile sayfa görüntüleme, kaydırma ve dış bağlantı tıklamalarını otomatik toplar. Bunlara ek olarak sitenin amacına özel aşağıdaki eventler tanımlandı:
+| Page             | Content                                                                                            |
+| ---------------- | -------------------------------------------------------------------------------------------------- |
+| `index.html`     | Home page with guide sections and highlights                                                       |
+| `places.html`    | 12 must-see places in and around the city                                                          |
+| `atakum.html`    | In-depth guide to Atakum: seafront, Batıpark and the Amazon Village, Çobanlı Pier, a one-day route |
+| `districts.html` | All 17 districts of Samsun with sights, local food and locator maps                                |
+| `food.html`      | Local dishes and a district-by-district food table                                                 |
+| `itinerary.html` | Hour-by-hour two-day itinerary                                                                     |
+| `practical.html` | Transport, seasons and FAQ                                                                         |
+| `about.html`     | About, image credits and privacy notice                                                            |
 
-| Event | Ne zaman tetiklenir | Parametreler | Cevapladığı soru |
-|---|---|---|---|
-| `open_map` | "Haritada aç" bağlantısına tıklanınca | `place_name`, `page_section` | Hangi yerler gerçekten ziyaret edilmek isteniyor? |
-| `select_district` | İlçeler sayfasında bir ilçe seçilince | `district_name` | En çok hangi ilçeler merak ediliyor? |
-| `cta_click` | Sayfa içi butonlara ve kartlara tıklanınca | `cta_label`, `cta_target` | Ziyaretçiler siteyi hangi yoldan geziyor? |
-| `faq_open` | Sık sorulan sorularda bir soru açılınca | `question` | Ziyaretçilerin kafasındaki sorular neler? |
-| `read_complete` | Sayfanın sonuna kadar inilince | `content_group` | Hangi içerikler sonuna kadar okunuyor? |
+## Measurement plan
 
-Her sayfa ayrıca bir `content_group` değeri gönderir (`home`, `atakum`, `districts`, `places`, `food`, `itinerary`, `practical`, `about`). Bu sayede sayfa grupları raporlarda karşılaştırılabiliyor.
+GA4 Enhanced Measurement collects page views, scrolls and outbound clicks automatically. On top of that, the site sends the following custom events:
 
-Event kodları `js/main.js` içinde.
+| Event             | Fired when                                         | Parameters                   | Question it answers                              |
+| ----------------- | -------------------------------------------------- | ---------------------------- | ------------------------------------------------ |
+| `open_map`        | A "Haritada aç" (open in maps) link is clicked     | `place_name`, `page_section` | Which places do visitors actually plan to visit? |
+| `select_district` | A district is chosen on the districts page         | `district_name`              | Which districts draw the most interest?          |
+| `cta_click`       | An in-page button or card is clicked               | `cta_label`, `cta_target`    | Which paths do visitors take through the site?   |
+| `faq_open`        | An FAQ item is expanded                            | `question`                   | What do visitors want to know before a trip?     |
+| `read_complete`   | The visitor scrolls to the end of the main content | `content_group`              | Which pages are read to the end?                 |
 
-## Teknik yapı
+Every page also sends a `content_group` (`home`, `places`, `atakum`, `districts`, `food`, `itinerary`, `practical`, `about`) so page groups can be compared in reports.
 
-- Saf HTML, CSS ve JavaScript. Framework ve build adımı yok.
-- Mobil uyumlu, erişilebilirlik için klavye odak durumları ve "içeriğe geç" bağlantısı içeriyor.
-- Vercel üzerinde yayında. `vercel.json` ile uzantısız temiz URL'ler kullanılıyor (`/atakum.html` yerine `/atakum`).
+The event code lives in `js/main.js`.
+
+## Tech
+
+- Plain HTML, CSS and JavaScript. No framework, no build step.
+- Responsive layout with a mobile menu, keyboard focus styles and a skip link.
+- Deployed on Vercel. `vercel.json` enables clean URLs (`/atakum` instead of `/atakum.html`).
 
 ```
 .
-├── index.html, atakum.html, districts.html, ...
+├── index.html, places.html, atakum.html, ...
 ├── css/style.css
 ├── js/main.js
 ├── favicon.svg
 └── vercel.json
 ```
 
-## Yerelde çalıştırma
+## Run locally
 
-Herhangi bir statik sunucu yeterli:
+Any static server works:
 
 ```bash
 npx serve .
 ```
 
-Dosyaları doğrudan tarayıcıda açmak da çalışır.
+Opening the HTML files directly in a browser also works.
 
-## Görseller
+## Images
 
-Fotoğrafların tamamı [Wikimedia Commons](https://commons.wikimedia.org)'ta serbest lisansla paylaşılmış görsellerdir. Her fotoğrafın üzerinde, fotoğrafçının adını ve lisans koşullarını gösteren kaynak sayfasına bağlantı bulunur. Tam liste `about.html` sayfasında.
+All photos are freely licensed images from [Wikimedia Commons](https://commons.wikimedia.org). Each photo links to its source page with the author and license. The full list is on `about.html`. Some food photos show the dish in general and may differ from the Samsun-style serving.
 
-## Gizlilik
+## Privacy
 
-Site yalnızca toplu ziyaretçi istatistikleri için Google Analytics 4 kullanır. Kişisel bilgi toplanmaz. Ayrıntılar `about.html` sayfasında.
+The site uses Google Analytics 4 for aggregate visitor statistics only. No personal data is collected. Details are on `about.html`.
 
-## Hazırlayan
+## Author
 
 Eren İşci

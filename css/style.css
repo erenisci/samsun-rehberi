@@ -1118,3 +1118,275 @@ table.food-table {
 .feature-card .stretched-link:focus-visible {
   outline: none;
 }
+
+/* ------------------------------------------------------------------ */
+/* Navigation: inline on wide screens, toggle menu below 1100px        */
+/* ------------------------------------------------------------------ */
+.site-header .container {
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.site-nav {
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  flex-wrap: nowrap;
+  gap: 2px;
+}
+
+.site-nav a {
+  padding: 8px 11px;
+  font-size: 0.92rem;
+}
+
+.nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  margin-left: auto;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--sea-900);
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+@media (max-width: 1099px) {
+  .site-header .container {
+    min-height: 64px;
+  }
+  .nav-toggle {
+    display: inline-flex;
+  }
+  .site-nav {
+    display: none;
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: 2px;
+    padding: 4px 0 14px;
+  }
+  .site-nav.is-open {
+    display: flex;
+  }
+  .site-nav a {
+    padding: 12px 14px;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Districts: photo plus locator map                                   */
+/* ------------------------------------------------------------------ */
+.district-media {
+  position: relative;
+}
+
+.district-media .photo {
+  margin: 0;
+}
+
+.photo.locator {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  width: 30%;
+  min-width: 96px;
+  max-width: 150px;
+  aspect-ratio: 1 / 1;
+  background: #fff;
+  border: 3px solid #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(14, 42, 58, 0.25);
+}
+
+.photo.locator img,
+.photo.locator-main img {
+  object-fit: contain;
+  background: #fff;
+}
+
+.photo.locator.is-broken {
+  display: none;
+}
+
+.photo.locator-main {
+  margin: 0;
+  background: #fff;
+  border: 1px solid var(--line);
+  aspect-ratio: 16 / 10;
+}
+
+.photo.locator-main.is-broken::after {
+  content: "Konum haritası";
+  color: var(--ink-soft);
+}
+
+/* ------------------------------------------------------------------ */
+/* Timeline with thumbnails                                            */
+/* ------------------------------------------------------------------ */
+.timeline li.has-thumb {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 24px;
+  align-items: start;
+}
+
+.timeline .photo.thumb {
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+}
+
+.timeline .photo.thumb figcaption {
+  font-size: 0.62rem;
+  right: 6px;
+  bottom: 6px;
+}
+
+.day-block {
+  max-width: 920px;
+}
+
+@media (max-width: 640px) {
+  .timeline li.has-thumb {
+    grid-template-columns: minmax(0, 1fr) 104px;
+    gap: 14px;
+  }
+  .timeline .photo.thumb {
+    aspect-ratio: 1 / 1;
+  }
+  .timeline .photo.thumb figcaption {
+    display: none;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Food, sweets, icon cards                                            */
+/* ------------------------------------------------------------------ */
+.food-card .map-link {
+  margin-top: auto;
+}
+
+.sweet {
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.sweet h3 {
+  margin-bottom: 4px;
+}
+
+.icon-tile {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--sand-100);
+  color: var(--clay-600);
+  display: grid;
+  place-items: center;
+  margin-bottom: 16px;
+}
+
+.icon-tile svg {
+  width: 28px;
+  height: 28px;
+}
+
+.band .icon-tile {
+  background: rgba(255, 255, 255, 0.1);
+  color: #f0b48f;
+}
+
+.info-card p {
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* Responsive refinements                                              */
+/* ------------------------------------------------------------------ */
+@media (max-width: 760px) {
+  body {
+    font-size: 16px;
+  }
+  section {
+    padding: 44px 0;
+  }
+  .hero-photo {
+    min-height: 520px;
+  }
+  .hero-photo p.lead,
+  .hero p.lead {
+    font-size: 1.05rem;
+  }
+  .card {
+    padding: 20px;
+  }
+  .card .photo {
+    margin: -20px -20px 16px;
+  }
+  .split + .split {
+    margin-top: 44px;
+  }
+  .btn-row .btn {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+  .facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+  .fact {
+    padding: 14px;
+  }
+  .fact strong {
+    font-size: 1.3rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .site-footer .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.district-media {
+  align-self: start;
+}

@@ -85,3 +85,26 @@
     observer.observe(sentinel);
   }
 })();
+
+// Mobile navigation toggle.
+(function () {
+  "use strict";
+  var toggle = document.querySelector(".nav-toggle");
+  var nav = document.getElementById("site-nav");
+  if (!toggle || !nav) {
+    return;
+  }
+  toggle.addEventListener("click", function () {
+    var open = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", String(!open));
+    toggle.setAttribute("aria-label", open ? "Menüyü aç" : "Menüyü kapat");
+    nav.classList.toggle("is-open", !open);
+  });
+  // Close the menu after choosing an in-page link.
+  nav.querySelectorAll("a").forEach(function (link) {
+    link.addEventListener("click", function () {
+      toggle.setAttribute("aria-expanded", "false");
+      nav.classList.remove("is-open");
+    });
+  });
+})();
